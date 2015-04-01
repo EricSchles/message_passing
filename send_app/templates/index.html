@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+  <head></head>
+  <body>
+    <form action="" method="POST">
+      <label>URL to pull</label><input type="text" name="url"></input> 
+      <input type="submit"></input>
+    </form>
+
+    {% if links %}
+    <ul>
+      {% for link in links%}
+      <li>{{link}}</li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+  </body>
+
+
+</html>
